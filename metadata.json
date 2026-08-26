@@ -1,0 +1,12 @@
+{
+  "name": "CropPulse",
+  "description": "AI-powered plant and leaf health diagnosis, disease and pest detection, organic & chemical treatment remedies, dosage calculations, and crop health maintenance guides.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #154212;
+  --color-primary-container: #2d5a27;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #9dd090;
+  --color-primary-fixed: #bcf0ae;
+  --color-primary-fixed-dim: #a1d494;
+  --color-on-primary-fixed: #002201;
+  --color-on-primary-fixed-variant: #23501e;
+
+  --color-secondary: #855300;
+  --color-secondary-container: #fea619;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #684000;
+  --color-secondary-fixed: #ffddb8;
+  --color-secondary-fixed-dim: #ffb95f;
+
+  --color-tertiary: #612800;
+  --color-tertiary-container: #853a00;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #ffb185;
+
+  --color-surface: #fcf9f1;
+  --color-surface-dim: #dcdad2;
+  --color-surface-bright: #fcf9f1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3eb;
+  --color-surface-container: #f1eee6;
+  --color-surface-container-high: #ebe8e0;
+  --color-surface-container-highest: #e5e2db;
+  --color-surface-variant: #e5e2db;
+
+  --color-background: #fcf9f1;
+  --color-on-background: #1c1c17;
+  --color-on-surface: #1c1c17;
+  --color-on-surface-variant: #42493e;
+  --color-inverse-surface: #31312c;
+  --color-inverse-on-surface: #f3f1e9;
+
+  --color-outline: #72796e;
+  --color-outline-variant: #c2c9bb;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
+.material-symbols-outlined.fill-icon {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.shutter-ring {
+  box-shadow: 0 0 0 4px white, 0 0 0 6px #154212;
+}
+
+@keyframes recordingPulse {
+  0% { box-shadow: 0 0 0 0 rgba(186, 26, 26, 0.5); }
+  70% { box-shadow: 0 0 0 12px rgba(186, 26, 26, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(186, 26, 26, 0); }
+}
+
+.recording-pulse {
+  animation: recordingPulse 1.5s infinite;
+}
